@@ -8,8 +8,8 @@ import time
 
 @st.cache_resource
 def load_assets():
-    model = joblib.load('genre_model.pkl')
-    tfidf = joblib.load('tfidf_vectorizer.pkl')
+    model = joblib.load('models/genre_model.pkl')
+    tfidf = joblib.load('models/tfidf_vectorizer.pkl')
     return model, tfidf
 
 
